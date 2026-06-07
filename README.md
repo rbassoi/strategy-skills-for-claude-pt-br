@@ -1,237 +1,163 @@
-# 21 McKinsey-Style Strategy Skills for Claude
+# Skills de Estratégia e Vendas para o Claude
 
-<img width="1024" height="1536" alt="Claude OS" src="https://github.com/user-attachments/assets/e459cb00-36f4-4f12-8abd-e420487ce177" />
+Uma coleção de skills prontas para uso no Claude, cobrindo dois universos de consultoria: **estratégia corporativa estilo McKinsey** e **excelência em vendas e gestão de contas estilo Accenture**. Todas as skills estão em português brasileiro.
 
+---
 
-> Inspired by McKinsey-style problem solving and broader MBB consulting practice: crisp framing, MECE logic, hypothesis-led analysis, 80/20 focus, answer-first communication, and executive-ready recommendations. This collection is independent and unofficial.
+## Bibliotecas Disponíveis
 
-## What This Is
+### McKinsey — 21 Skills de Estratégia
 
-This repository contains 21 standalone Claude skills for strategy work, grouped into six practical consulting domains. Each skill is a small, uploadable workflow that teaches Claude how to perform one high-value consulting task with a repeatable McKinsey-style method.
+Skills de resolução de problemas estratégicos: enquadramento de problemas, inteligência de mercado, escolha estratégica, modelo operacional, governança de valor e comunicação executiva.
 
-Together, the skills operate like a consulting AI operating system for a full engagement: diagnose the problem, map the market, choose a strategic path, translate it into execution, govern value, and communicate the recommendation.
+**Inspiração:** lógica MECE, análise orientada por hipóteses, foco 80/20, comunicação com a resposta primeiro.
 
-The collection is designed for business builders, operators, consultants, analysts, founders, and strategy teams who want Claude to work closer to a top 1% MBB-style consultant: structured before analytical, hypothesis-led before exhaustive, and executive-ready before verbose.
+→ [Ver biblioteca McKinsey](McKinsey/README.md)
 
-```mermaid
-flowchart LR
-    diagnose["Diagnose And Frame"] --> map["Map Markets And Competition"]
-    map --> choose["Choose Strategy And Economics"]
-    choose --> execute["Build Operating Model And Execution"]
-    execute --> govern["Govern Risk, Performance, And Value"]
-    govern --> communicate["Align And Communicate"]
-```
+### Accenture — 10 Skills de Vendas e Contas
 
-## Why It Exists
+Skills de gestão de pursuit, propostas, operações de vendas, inteligência competitiva e crescimento de contas.
 
-Most strategy prompts fail because they ask for insight before the work is structured. This consulting AI operating system gives Claude a reusable engagement backbone that helps it:
+**Inspiração:** gestão estruturada de pursuit, temas vencedores respaldados por evidências, governança comercial explícita, valor quantificado para o cliente.
 
-✓ frame the real decision  
-✓ separate symptoms from causes  
-✓ make assumptions visible  
-✓ build MECE structures  
-✓ prioritize the few moves that matter  
-✓ stress-test recommendations before they meet reality  
-✓ communicate in a board-ready way  
+→ [Ver biblioteca Accenture](Accenture/README.md)
 
-## Collection Map
+---
+
+## Estrutura do Repositório
 
 ```text
 strategy-skills-for-claude/
 │
-├── README.md
+├── README.md                          ← este arquivo
 │
-└── skills/
-    ├── 01-diagnosis-and-framing/
-    │   ├── situation-assessment.md
-    │   ├── growth-barriers.md
-    │   └── assumption-audit.md
-    ├── 02-market-and-competitive-intelligence/
-    │   ├── market-mapping.md
-    │   ├── competitive-intel.md
-    │   ├── customer-segmentation.md
-    │   └── profit-pool-analysis.md
-    ├── 03-strategic-choice-and-economics/
-    │   ├── strategic-options.md
-    │   ├── pricing-strategy.md
-    │   ├── business-case-builder.md
-    │   └── portfolio-review.md
-    ├── 04-operating-model-and-execution/
-    │   ├── operating-model-design.md
-    │   ├── initiative-prioritizer.md
-    │   └── transformation-roadmap.md
-    ├── 05-risk-performance-and-value-governance/
-    │   ├── war-gaming.md
-    │   ├── risk-and-mitigation.md
-    │   ├── kpi-architect.md
-    │   └── value-realization.md
-    └── 06-alignment-and-executive-communication/
-        ├── stakeholder-alignment.md
-        ├── narrative-builder.md
-        └── decision-memo.md
+├── McKinsey/                          ← 21 skills de estratégia (PT-BR)
+│   ├── README.md
+│   └── skills/
+│       ├── 01-diagnostico-e-enquadramento/
+│       │   ├── avaliacao-da-situacao.md
+│       │   ├── barreiras-de-crescimento.md
+│       │   └── auditoria-de-premissas.md
+│       ├── 02-inteligencia-de-mercado-e-competitiva/
+│       │   ├── mapeamento-de-mercado.md
+│       │   ├── inteligencia-competitiva.md
+│       │   ├── segmentacao-de-clientes.md
+│       │   └── analise-de-pool-de-lucro.md
+│       ├── 03-escolha-estrategica-e-economia/
+│       │   ├── opcoes-estrategicas.md
+│       │   ├── estrategia-de-precificacao.md
+│       │   ├── construtor-de-caso-de-negocio.md
+│       │   └── revisao-de-portfolio.md
+│       ├── 04-modelo-operacional-e-execucao/
+│       │   ├── design-do-modelo-operacional.md
+│       │   ├── priorizador-de-iniciativas.md
+│       │   └── roteiro-de-transformacao.md
+│       ├── 05-risco-performance-e-governanca-de-valor/
+│       │   ├── simulacao-de-guerra-estrategica.md
+│       │   ├── risco-e-mitigacao.md
+│       │   ├── arquiteto-de-kpis.md
+│       │   └── realizacao-de-valor.md
+│       └── 06-alinhamento-e-comunicacao-executiva/
+│           ├── alinhamento-de-partes-interessadas.md
+│           ├── construtor-de-narrativa.md
+│           └── memorando-de-decisao.md
+│
+└── Accenture/                         ← 10 skills de vendas e contas (PT-BR)
+    ├── README.md
+    └── skills/
+            ├── 01-propostas/
+            │   ├── briefing-de-inicio-de-proposta.md
+            │   ├── criador-de-temas-vencedores.md
+            │   ├── redator-de-sumario-executivo.md
+            │   └── redator-de-declaracao-de-trabalho.md
+            ├── 02-operacoes-de-vendas/
+            │   ├── criador-de-oportunidades-salesforce.md
+            │   └── navegador-de-mesa-de-negocios.md
+            ├── 03-inteligencia-competitiva/
+            │   └── contra-posicionamento-competitivo.md
+            ├── 04-analytics/
+            │   └── construtor-de-caso-de-valor-cliente.md
+            ├── 05-comunicacoes-com-cliente/
+            │   └── redator-de-relatorio-de-status.md
+            └── 06-crescimento-de-contas/
+                    └── identificador-de-oportunidades-de-crescimento.md
 ```
 
-Each markdown file under `skills/` is an individual skill definition. To upload one into Claude, place the chosen file in a temporary folder and name it `SKILL.md`.
+---
 
-## The 21 Skills
+## Mapa Rápido de Skills
 
-### 1. Diagnosis and Framing
+### McKinsey — Estratégia
 
-Use these when the team needs to understand the real problem before choosing a move. The style is McKinsey-inspired: fact base first, root cause discipline, explicit assumptions, and a clear question to answer.
+| Precisa de... | Skill |
+|---|---|
+| Entender a situação atual | `avaliacao-da-situacao` |
+| Desbloquear crescimento | `barreiras-de-crescimento` |
+| Testar crenças estratégicas | `auditoria-de-premissas` |
+| Mapear e dimensionar mercado | `mapeamento-de-mercado` |
+| Entender concorrentes | `inteligencia-competitiva` |
+| Segmentar clientes | `segmentacao-de-clientes` |
+| Encontrar onde o lucro está | `analise-de-pool-de-lucro` |
+| Gerar opções antes de decidir | `opcoes-estrategicas` |
+| Melhorar monetização | `estrategia-de-precificacao` |
+| Quantificar economics de um movimento | `construtor-de-caso-de-negocio` |
+| Alocar recursos entre apostas | `revisao-de-portfolio` |
+| Traduzir estratégia em operação | `design-do-modelo-operacional` |
+| Cortar lista de iniciativas | `priorizador-de-iniciativas` |
+| Criar plano de execução | `roteiro-de-transformacao` |
+| Testar estratégia sob pressão | `simulacao-de-guerra-estrategica` |
+| Controlar riscos estratégicos | `risco-e-mitigacao` |
+| Desenhar métricas | `arquiteto-de-kpis` |
+| Garantir captura de benefícios | `realizacao-de-valor` |
+| Ganhar aprovação antes da reunião | `alinhamento-de-partes-interessadas` |
+| Construir a narrativa executiva | `construtor-de-narrativa` |
+| Escrever recomendação para liderança | `memorando-de-decisao` |
 
-| Skill | Use It When | Output |
-|---|---|---|
-| [Situation Assessment](skills/01-diagnosis-and-framing/situation-assessment.md) | You need the factual baseline before choosing a direction | Fact base, momentum read, issues list |
-| [Growth Barriers](skills/01-diagnosis-and-framing/growth-barriers.md) | Growth is stuck and leadership is debating symptoms | Constraint diagnosis and evidence plan |
-| [Assumption Audit](skills/01-diagnosis-and-framing/assumption-audit.md) | A strategy depends on beliefs that may be weak | Assumption register and test plan |
+### Accenture — Vendas e Contas
 
-### 2. Market and Competitive Intelligence
+| Precisa de... | Skill |
+|---|---|
+| Abrir um pursuit | `briefing-de-inicio-de-proposta` |
+| Posicionar a proposta | `criador-de-temas-vencedores` |
+| Escrever o sumário executivo | `redator-de-sumario-executivo` |
+| Redigir o SOW | `redator-de-declaracao-de-trabalho` |
+| Criar oportunidade no Salesforce | `criador-de-oportunidades-salesforce` |
+| Submeter ao Deal Desk | `navegador-de-mesa-de-negocios` |
+| Contra-posicionar concorrentes | `contra-posicionamento-competitivo` |
+| Quantificar ROI para o cliente | `construtor-de-caso-de-valor-cliente` |
+| Reportar status com RAG | `redator-de-relatorio-de-status` |
+| Encontrar crescimento na conta | `identificador-de-oportunidades-de-crescimento` |
 
-Use these when the answer depends on where value is, how customers differ, how rivals may behave, or where the attractive space sits.
+---
 
-| Skill | Use It When | Output |
-|---|---|---|
-| [Market Mapping](skills/02-market-and-competitive-intelligence/market-mapping.md) | You need to size, segment, and map white space | Market map and where-to-play options |
-| [Competitive Intel](skills/02-market-and-competitive-intelligence/competitive-intel.md) | You need to predict likely competitor moves | Rival move map and response plan |
-| [Customer Segmentation](skills/02-market-and-competitive-intelligence/customer-segmentation.md) | You need sharper customer groups for strategy decisions | MECE segments and segment priorities |
-| [Profit Pool Analysis](skills/02-market-and-competitive-intelligence/profit-pool-analysis.md) | You need to know where value is created and captured | Profit pool map and strategic implications |
+## Como Instalar uma Skill
 
-### 3. Strategic Choice and Economics
+Cada arquivo `.md` é uma skill autônoma. Para usar no Claude:
 
-Use these when leaders need choices, trade-offs, economics, and allocation decisions. These skills push Claude toward option-aware, evidence-backed recommendations rather than single-answer advocacy.
-
-| Skill | Use It When | Output |
-|---|---|---|
-| [Strategic Options](skills/03-strategic-choice-and-economics/strategic-options.md) | You need alternatives before committing to a path | Option set, criteria, recommendation |
-| [Pricing Strategy](skills/03-strategic-choice-and-economics/pricing-strategy.md) | Pricing power, discounting, or monetization is unclear | Pricing diagnosis and action plan |
-| [Business Case Builder](skills/03-strategic-choice-and-economics/business-case-builder.md) | A decision needs economics, sensitivities, and risks | Business case and decision logic |
-| [Portfolio Review](skills/03-strategic-choice-and-economics/portfolio-review.md) | You need to allocate resources across bets | Portfolio diagnosis and allocation choices |
-
-### 4. Operating Model and Execution
-
-Use these when the strategy must become work: capabilities, decision rights, initiative choices, roadmaps, owners, and the first 90 days.
-
-| Skill | Use It When | Output |
-|---|---|---|
-| [Operating Model Design](skills/04-operating-model-and-execution/operating-model-design.md) | Strategy needs translation into how work gets done | Capabilities, governance, decision rights |
-| [Initiative Prioritizer](skills/04-operating-model-and-execution/initiative-prioritizer.md) | Too many initiatives compete for attention | Ranked roadmap and kill list |
-| [Transformation Roadmap](skills/04-operating-model-and-execution/transformation-roadmap.md) | A strategy must become sequenced execution | Phased roadmap, owners, risks |
-
-### 5. Risk, Performance, and Value Governance
-
-Use these when the recommendation needs pressure-testing, risk control, measurement, and value capture. The standard is a board-ready governance view, not a generic risk list.
-
-| Skill | Use It When | Output |
-|---|---|---|
-| [War Gaming](skills/05-risk-performance-and-value-governance/war-gaming.md) | A strategy needs pressure-testing before launch | Scenario stress test and response moves |
-| [Risk and Mitigation](skills/05-risk-performance-and-value-governance/risk-and-mitigation.md) | Strategic risk needs an owner and response plan | Risk register and contingencies |
-| [KPI Architect](skills/05-risk-performance-and-value-governance/kpi-architect.md) | Metrics are noisy, lagging, or performative | Decision-linked KPI system |
-| [Value Realization](skills/05-risk-performance-and-value-governance/value-realization.md) | Benefits must be tracked after launch | Value ledger and governance model |
-
-### 6. Alignment and Executive Communication
-
-Use these when the work must survive the meeting: pre-wire stakeholders, sharpen the executive story, and turn the recommendation into a written decision.
-
-| Skill | Use It When | Output |
-|---|---|---|
-| [Stakeholder Alignment](skills/06-alignment-and-executive-communication/stakeholder-alignment.md) | The recommendation needs pre-wiring before the meeting | Stakeholder map and engagement plan |
-| [Narrative Builder](skills/06-alignment-and-executive-communication/narrative-builder.md) | You need the story to land in the first 60 seconds | Pyramid story, SCQA, hostile Q&A |
-| [Decision Memo](skills/06-alignment-and-executive-communication/decision-memo.md) | An executive needs a clear recommendation in writing | Decision memo with options and next steps |
-
-## How To Install
-
-This repository keeps the 21 skills as standalone markdown files grouped under `skills/`. Claude expects an uploaded skill folder to contain a file named `SKILL.md`, so use a small temporary folder when you want to install one.
-
-1. Pick a markdown file under one of the `skills/` category folders.
-2. Create a temporary folder with the skill name.
-3. Copy the chosen markdown file into that folder as `SKILL.md`.
-4. Zip that temporary folder if your Claude surface requires upload as a zip.
-5. Upload or place it in your Claude skills directory.
-6. Test with a clear strategy prompt.
-
-Example:
+1. Escolha o arquivo da skill que você quer usar.
+2. Crie uma pasta temporária com o nome da skill.
+3. Copie o arquivo para essa pasta com o nome `SKILL.md`.
+4. Compacte em `.zip` se necessário para o seu ambiente Claude.
+5. Faça upload no Claude e teste com um prompt relevante.
 
 ```bash
-cd strategy-skills-for-claude
-mkdir -p upload/market-mapping
-cp skills/02-market-and-competitive-intelligence/market-mapping.md upload/market-mapping/SKILL.md
-cd upload
-zip -r market-mapping.zip market-mapping
+# Exemplo — McKinsey
+mkdir upload/simulacao-de-guerra-estrategica
+cp McKinsey/skills/05-risco-performance-e-governanca-de-valor/simulacao-de-guerra-estrategica.md \
+   upload/simulacao-de-guerra-estrategica/SKILL.md
+
+# Exemplo — Accenture
+mkdir upload/criador-de-temas-vencedores
+cp accenture/pt-br/skills/01-propostas/criador-de-temas-vencedores.md \
+   upload/criador-de-temas-vencedores/SKILL.md
 ```
 
-## How To Choose A Skill
+---
 
-```text
-Need truth about the current situation?        -> 01-diagnosis-and-framing/situation-assessment
-Need to unblock growth?                        -> 01-diagnosis-and-framing/growth-barriers
-Need to test strategy beliefs?                 -> 01-diagnosis-and-framing/assumption-audit
+## Quando Usar Cada Biblioteca
 
-Need to find attractive spaces?                -> 02-market-and-competitive-intelligence/market-mapping
-Need to understand rivals?                     -> 02-market-and-competitive-intelligence/competitive-intel
-Need better customer groups?                   -> 02-market-and-competitive-intelligence/customer-segmentation
-Need to find where money is made?              -> 02-market-and-competitive-intelligence/profit-pool-analysis
+**Use McKinsey quando** o problema é estratégico: qual mercado entrar, como alocar capital, por que o crescimento travou, como estruturar a execução, como comunicar uma recomendação ao conselho.
 
-Need options before deciding?                  -> 03-strategic-choice-and-economics/strategic-options
-Need better monetization?                      -> 03-strategic-choice-and-economics/pricing-strategy
-Need the economics of a move?                  -> 03-strategic-choice-and-economics/business-case-builder
-Need to allocate across bets?                  -> 03-strategic-choice-and-economics/portfolio-review
+**Use Accenture quando** o trabalho é comercial ou operacional de vendas: abrir um pursuit, escrever uma proposta, contra-posicionar concorrentes, justificar ROI para aprovação interna, reportar progresso ao cliente, ou identificar crescimento em contas existentes.
 
-Need to redesign how work happens?             -> 04-operating-model-and-execution/operating-model-design
-Need to cut the initiative list?               -> 04-operating-model-and-execution/initiative-prioritizer
-Need a delivery plan?                          -> 04-operating-model-and-execution/transformation-roadmap
-
-Need to stress-test reality?                   -> 05-risk-performance-and-value-governance/war-gaming
-Need strategic risk control?                   -> 05-risk-performance-and-value-governance/risk-and-mitigation
-Need better metrics?                           -> 05-risk-performance-and-value-governance/kpi-architect
-Need to make benefits stick?                   -> 05-risk-performance-and-value-governance/value-realization
-
-Need to win approval before the meeting?       -> 06-alignment-and-executive-communication/stakeholder-alignment
-Need the story?                                -> 06-alignment-and-executive-communication/narrative-builder
-Need a written executive decision?             -> 06-alignment-and-executive-communication/decision-memo
-```
-
-## Example Prompts
-
-```text
-Use the market-mapping skill to size the opportunity for a B2B payments product in Germany.
-```
-
-```text
-Use the assumption-audit skill to pressure-test our expansion strategy before the board meeting.
-```
-
-```text
-Use the narrative-builder skill to turn this recommendation into a McKinsey-style executive story.
-```
-
-```text
-Use the initiative-prioritizer skill to cut this list of 18 projects into the 3 that matter.
-```
-
-## Design Standards Used
-
-This collection follows the Claude skill-building guide:
-
-✓ each skill definition includes valid `SKILL.md` frontmatter  
-✓ skill file names use kebab-case  
-✓ frontmatter includes `name` and `description`  
-✓ descriptions include what the skill does and when to use it  
-✓ skills are grouped into six consulting domains for easier selection  
-✓ instructions are concise and actionable  
-✓ each skill includes a workflow, output format, and quality bar  
-
-## Positioning Note
-
-"McKinsey-style" refers to a school of strategy problem solving: structured issue diagnosis, MECE thinking, hypothesis-led analysis, 80/20 focus, pyramid communication, and rigorous recommendation design. It is appropriate to describe these as McKinsey-inspired, McKinsey-style, or based on common McKinsey-style frameworks. Avoid any wording that implies McKinsey authorship, affiliation, or endorsement.
-
-## Quality Bar
-
-Every skill is designed to push Claude toward outputs that are:
-
-✓ decision-oriented  
-✓ structured before analytical  
-✓ evidence-aware  
-✓ assumption-conscious  
-✓ executive-readable  
-✓ specific enough to act on  
-
+As duas bibliotecas se complementam: McKinsey define a estratégia, Accenture executa a venda e entrega.
